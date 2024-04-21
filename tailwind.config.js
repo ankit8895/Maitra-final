@@ -8,10 +8,11 @@ module.exports = withMT({
     'path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    fontFamily: {
-      rubik: ['Rubik', 'sans-serif'],
+    extend: {
+      fontFamily: {
+        rubik: ['Rubik', 'sans-serif'],
+      },
     },
-    extend: {},
   },
   plugins: [],
 });
