@@ -10,3 +10,39 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-moz-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-moz-scrollbar-thumb {
+  background: black;
+}
+
+::-ms-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-ms-scrollbar-thumb {
+  background: black;
+}
+
+::scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::scrollbar-thumb {
+  background: black;
+}

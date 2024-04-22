@@ -7,23 +7,23 @@ const Introduction = () => {
   return (
     <Section
       id='introduction'
-      customPadding='my-20 mx-10'
-      className='lg:max-h-fit'
+      customPadding=' my-5 mx-3 md:my-10 md:mx-5 lg:my-20 lg:mx-10'
+      className="lg:max-h-fit bg-[url('./background.png')] bg-cover"
     >
       <Heading text='Introduction' />
-      <div className='flex flex-row justify-around items-center px-10'>
-        <div className='flex items-center justify-center lg:w-2/5 h-[30rem]'>
+      <div className='flex flex-col gap-4 md:gap-0 md:flex-row justify-center md:justify-evenly lg:justify-around items-center lg:px-10'>
+        <div className='flex items-center justify-center md:w-1/3 lg:w-2/5 md:h-[30rem]'>
           <img
-            src='https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-            alt='photo'
-            className='bg-center object-cover w-full h-[30rem] shadow-xl rounded-lg'
+            src='./profile.jpeg'
+            alt='profile-photo'
+            className='bg-center object-cover w-full md:h-full shadow-xl rounded-lg'
           />
         </div>
-        <div className='flex flex-col justify-between items-start lg:w-2/5 h-[30rem]'>
+        <div className='flex flex-col justify-between items-start md:w-1/2 lg:w-2/5 md:h-[30rem]'>
           <Typography
             as='p'
             variant='paragraph'
-            className='font-rubik text-justify'
+            className='font-rubik text-justify mb-3 lg:mb-0'
           >
             <span className='font-medium lg:text-2xl text-[#0063A4]'>
               Maitra
@@ -49,7 +49,7 @@ const Introduction = () => {
             <Typography
               as='p'
               variant='lead'
-              className='font-rubik mb-4 font-medium'
+              className='font-rubik md:mb-1 lg:mb-4 font-medium'
             >
               "अशक्यं प्रकृतः ऋते जीवनम"
             </Typography>
