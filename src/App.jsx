@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Introduction from './components/Introduction';
@@ -9,15 +10,50 @@ import Footer from './components/Footer';
 import SpeedDialComponent from './components/SpeedDialComponent';
 import { Typography } from '@material-tailwind/react';
 
+import ModuleCleaning from './pages/ModuleCleaning';
+import InverterMaintenance from './pages/InverterMaintenance';
+import Reporting from './pages/Reporting';
+import PlantMonitoringPerformance from './pages/PlantMonitoringPerformance';
+import InverterCommunication from './pages/InverterCommunication';
+import PlantThermography from './pages/PlantThermography';
+import ChemicalCleaning from './pages/ChemicalCleaning';
+import Revamping from './pages/Revamping';
+import StreetLights from './pages/StreetLights';
+
 const App = () => {
   return (
-    <div className='m-0 p-0 relative'>
+    <Router className='m-0 p-0 relative'>
       <Header />
-      <Hero />
-      <Introduction />
-      <Portfolio />
-      <Services />
-      <Contact />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Hero />
+              <Introduction />
+              <Portfolio />
+              <Services />
+              <Contact />
+            </>
+          }
+        />
+        <Route path='/module-cleaning' element={<ModuleCleaning />} />
+        <Route path='/inverter-maintenance' element={<InverterMaintenance />} />
+        <Route path='/reporting' element={<Reporting />} />
+        <Route
+          path='/plant-monitoring-performance'
+          element={<PlantMonitoringPerformance />}
+        />
+        <Route
+          path='/inverter-communication'
+          element={<InverterCommunication />}
+        />
+        <Route path='/plant-thermography' element={<PlantThermography />} />
+        <Route path='/chemical-cleaning' element={<ChemicalCleaning />} />
+        <Route path='/revamping' element={<Revamping />} />
+        <Route path='/street-lights' element={<StreetLights />} />
+      </Routes>
+
       <Footer />
       <SpeedDialComponent />
       <Typography
@@ -28,7 +64,7 @@ const App = () => {
       >
         This website is designed by Wellnexus India
       </Typography>
-    </div>
+    </Router>
   );
 };
 

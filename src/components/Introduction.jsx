@@ -25,10 +25,8 @@ const Introduction = () => {
             variant='paragraph'
             className='font-rubik text-justify mb-3 lg:mb-0'
           >
-            <span className='font-medium lg:text-2xl text-[#0063A4]'>
-              Maitra
-            </span>
-            <span className='font-medium lg:text-2xl text-[#FFCB05]'>
+            <span className='font-medium text-[#0063A4]'>Maitra</span>
+            <span className='font-medium text-[#FFCB05]'>
               {' '}
               Solar Solutions
             </span>{' '}

@@ -23,7 +23,7 @@ const Header = () => {
         as='li'
         variant='small'
         color='blue-gray'
-        className='p-1 font-normal font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
+        className='p-1 font-medium font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
       >
         <a href='#introduction' className='flex items-center'>
           Introduction
@@ -33,7 +33,7 @@ const Header = () => {
         as='li'
         variant='small'
         color='blue-gray'
-        className='p-1 font-normal font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
+        className='p-1 font-medium font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
       >
         <a href='#portfolio' className='flex items-center'>
           Values
@@ -43,7 +43,7 @@ const Header = () => {
         as='li'
         variant='small'
         color='blue-gray'
-        className='p-1 font-normal font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
+        className='p-1 font-medium font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
       >
         <a href='#offer' className='flex items-center'>
           Services
@@ -53,7 +53,7 @@ const Header = () => {
         as='li'
         variant='small'
         color='blue-gray'
-        className='p-1 font-normal font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
+        className='p-1 font-medium font-rubik text-lg hover:text-[#0063A4] focus:text-[#0063A4]'
       >
         <a href='#contact' className='flex items-center'>
           Contact

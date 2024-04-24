@@ -9,7 +9,7 @@ const Footer = () => {
           as='a'
           href='#introduction'
           color='blue-gray'
-          className='font-normal font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] text-lg'
+          className='font-medium font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] lg:text-lg'
         >
           Introduction
         </Typography>
@@ -19,7 +19,7 @@ const Footer = () => {
           as='a'
           href='#portfolio'
           color='blue-gray'
-          className='font-normal font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] text-lg'
+          className='font-medium font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] lg:text-lg'
         >
           Values
         </Typography>
@@ -29,7 +29,7 @@ const Footer = () => {
           as='a'
           href='#offer'
           color='blue-gray'
-          className='font-normal font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] text-lg'
+          className='font-medium font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] lg:text-lg'
         >
           Services
         </Typography>
@@ -39,7 +39,7 @@ const Footer = () => {
           as='a'
           href='#contact'
           color='blue-gray'
-          className='font-normal font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] text-lg'
+          className='font-medium font-rubik transition-colors hover:text-[#0063A4] focus:text-[#0063A4] lg:text-lg'
         >
           Contact Us
         </Typography>

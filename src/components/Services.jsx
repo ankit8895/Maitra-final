@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from './Section';
 import Heading from './Heading';
 
@@ -14,67 +15,58 @@ import {
 const Services = () => {
   const servicesList = [
     {
-      src: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
+      src: './mc1.jpeg',
       heading: 'Module cleaning',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Effective module cleaning helps to generate more electricity and mostly done with brush and water. Sometimes, dry cleaning using brush only.`,
+      route: '/module-cleaning',
     },
     {
       src: './im1.jpeg',
       heading: 'Inverter maintenance',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Inverters converts solar energy (DC) to usable (AC) energy. Periodic inverter maintenance helps to reduce breakdown of inverter also increases its life.`,
+      route: '/inverter-maintenance',
     },
     {
       src: './reporting1.jpg',
       heading: 'Reporting',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Reports are the recording of previous activities and help to understand the work flow and give direction to plan next activities.`,
+      route: '/reporting',
     },
     {
       src: './pmp1.jpg',
       heading: 'Plant monitoring & performance',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Plants are monitored using different applications to confirm if everything is in place. This will trigger alarms for showing non routine things.`,
+      route: '/plant-monitoring-performance',
     },
     {
       src: './ic1.jpeg',
       heading: 'Inverter communication',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Communication between the Monitor Application and inverters should be smooth to get the actual generation data.`,
+      route: '/inverter-communication',
     },
     {
       src: './pt1.jpg',
       heading: 'Plant Thermography',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `Plant Thermography is best way to understand if there are any damages to solar plant. This will showcase the thermal images of all entities involved in plants.`,
+      route: '/plant-thermography',
     },
     {
       src: './cc1.jpeg',
       heading: 'Chemical Cleaning',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `If solar panels are covered with metal dust or other than normal dust, then it will reduce the generation. In these cases, chemical cleaning is conducted.`,
+      route: '/chemical-cleaning',
     },
     {
       src: './Revamping.jpg',
       heading: 'Revamping',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `After installation of solar plant, requirements are changed after few years, revamping of solar can be done.`,
+      route: '/revamping',
     },
     {
       src: './sl1.webp',
       heading: 'Street lights',
-      description: `The place is close to Barceloneta Beach and bus stop just 2 min by
-      walk and near to &quot;Naviglio&quot; where you can enjoy the main
-      night life in Barcelona.`,
+      description: `We provide street lights, installation and their maintenance. These street lights are semi-integrated and fully integrated.`,
+      route: '/street-lights',
     },
   ];
   return (
@@ -86,7 +78,7 @@ const Services = () => {
       <Heading text='Services' />
       <div className='hidden lg:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-12 lg:px-10'>
         {servicesList.map((item, index) => (
-          <Card key={index} className='mt-6 w-full md:h-min'>
+          <Card key={index} className='mt-6 w-full md:h-min lg:h-full'>
             <CardHeader
               color='blue-gray'
               className='relative hidden md:block lg:h-56 bg-transparent'
@@ -106,7 +98,17 @@ const Services = () => {
               </Typography>
             </CardBody>
             <CardFooter className='pt-0'>
-              <Button className='font-rubik'>Read More</Button>
+              <Link
+                to={item.route}
+                className='relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-lg group'
+              >
+                <span className='w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-black opacity-[3%]'></span>
+                <span className='absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-black opacity-100 group-hover:-translate-x-8'></span>
+                <span className='relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-white'>
+                  Read More
+                </span>
+                <span className='absolute inset-0 border-2 border-black rounded-lg'></span>
+              </Link>
             </CardFooter>
           </Card>
         ))}
@@ -118,8 +120,8 @@ const Services = () => {
             <div
               className={`ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 transform duration-200 hover:shadow-md z-0 relative ${
                 index % 2 === 0
-                  ? 'ring-[#0063A4] shadow-[#0063A4]'
-                  : 'ring-[#FFCB05] shadow-[#FFCB05]'
+                  ? 'hover:ring-[#0063A4] hover:shadow-[#0063A4]'
+                  : 'hover:ring-[#FFCB05] hover:shadow-[#FFCB05]'
               }`}
             >
               <div className='flex flex-col break-inside-avoid-page z-0 relative'>
@@ -144,8 +146,7 @@ const Services = () => {
 
                 <Typography
                   as='a'
-                  href='#'
-                  target='_blank'
+                  href={item.route}
                   className='font-rubik text-justify'
                 >
                   {item.description}
