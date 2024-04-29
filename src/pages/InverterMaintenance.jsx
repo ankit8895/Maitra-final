@@ -4,7 +4,10 @@ import Heading from '../components/Heading';
 import { Carousel, Typography } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 
+import useScrollToTop from '../hooks/useScrollToTop';
+
 const InverterMaintenance = () => {
+  useScrollToTop();
   return (
     <Section
       customPadding='my-5 mx-3 md:my-10 md:mx-5 lg:my-10 lg:mx-10'

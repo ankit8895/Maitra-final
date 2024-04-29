@@ -31,7 +31,7 @@ const SpeedDialComponent = () => {
           </IconButton>
         </SpeedDialHandler>
         <SpeedDialContent>
-          <Modal Modalfor='whatsapp'>
+          <Modal Modalfor='whatsapp' Modalsize='md'>
             <SpeedDialAction className='relative font-rubik text-green-600'>
               <ImWhatsapp className='h-5 w-5' />
               <Typography {...labelProps} color='green'>
@@ -39,7 +39,7 @@ const SpeedDialComponent = () => {
               </Typography>
             </SpeedDialAction>
           </Modal>
-          <Modal>
+          <Modal Modalfor='Linkedin' Modalsize='md'>
             <SpeedDialAction className='relative font-rubik text-blue-600'>
               <GrLinkedinOption className='h-5 w-5' />
               <Typography {...labelProps} color='blue'>
@@ -47,7 +47,7 @@ const SpeedDialComponent = () => {
               </Typography>
             </SpeedDialAction>
           </Modal>
-          <Modal Modalfor='email'>
+          <Modal Modalfor='email' Modalsize='md'>
             <SpeedDialAction className='relative font-rubik text-red-600'>
               <AiOutlineMail className='h-5 w-5' />
               <Typography {...labelProps} color='red'>

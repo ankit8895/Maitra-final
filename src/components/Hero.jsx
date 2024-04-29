@@ -24,12 +24,22 @@ const Hero = () => {
         )}
       >
         <img
-          src='./carousel4.jpg'
+          src='./carousel1.png'
           alt='image 1'
           className='h-full w-full md:object-cover lg:object-fill'
         />
         <img
-          src='./carousel5.jpg'
+          src='./carousel2.png'
+          alt='image 2'
+          className='h-full w-full md:object-cover lg:object-fill'
+        />
+        <img
+          src='./carousel3.png'
+          alt='image 2'
+          className='h-full w-full md:object-cover lg:object-fill'
+        />
+        <img
+          src='./carousel4.png'
           alt='image 2'
           className='h-full w-full md:object-cover lg:object-fill'
         />

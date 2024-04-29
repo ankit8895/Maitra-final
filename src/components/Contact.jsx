@@ -1,44 +1,11 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import Section from './Section';
 import Heading from './Heading';
-import {
-  Checkbox,
-  Input,
-  Textarea,
-  Typography,
-} from '@material-tailwind/react';
+import { Typography } from '@material-tailwind/react';
+import Modal from './Modal';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
-
-  const formSubmitHandler = async () => {
-    const formData = {
-      name,
-      email,
-      subject,
-      message,
-    };
-
-    // try {
-    //   const response = await axios.post(
-    //     'https://docs.google.com/forms/d/e/1FAIpQLSfD373DJ24n83fG77JAEsQKH3FmvRUGSl6YbVWWQKncHegrIw/viewform?embedded=true',
-    //     formData
-    //   );
-
-    //   console.log('Form submited', response);
-    // } catch (error) {
-    //   console.error('Error submitting form:', error);
-    // }
-
-    const queryParams = new URLSearchParams(formData).toString();
-    const googleFormsURL = `https://docs.google.com/forms/u/0/d/e/1FAIpQLSfD373DJ24n83fG77JAEsQKH3FmvRUGSl6YbVWWQKncHegrIw/formResponse?${queryParams}`;
-    window.open(googleFormsURL, '_blank');
-  };
-
   return (
     <Section
       id='contact'
@@ -53,77 +20,27 @@ const Contact = () => {
               Ready to go solar ?
             </Typography>
             <Typography variant='paragraph' className='font-rubik text-justify'>
-              By clicking "Get A Free Solar Estimate", I consent to join the
-              email list and receive SMS from Maitra Solar solutions, with
-              access to our latest offers and services. Message a data rates may
-              apply. Message frequency varies. More details on this are in our{' '}
-              <span className='underline cursor-pointer'>
+              By clicking{' '}
+              <span className='font-bold'>"Get A Free Solar Estimate"</span>, I
+              consent to join the email list and receive SMS from Maitra Solar
+              solutions, with access to our latest offers and services. Message
+              a data rates may apply. Message frequency varies. More details on
+              this are in our{' '}
+              <Link
+                to='/privacy-policy'
+                className='text-start underline underline-offset-4 cursor-pointer font-bold'
+              >
                 Privacy Policy and Terms of Service
-              </span>
+              </Link>
             </Typography>
           </div>
         </div>
 
         <div className='mt-8 mb-2 lg:w-[30rem]'>
-          {/* <form className='flex flex-col gap-2 items-center justify-center w-full'>
-            <div className='relative w-full min-w-[200px]'>
-              <Input
-                label='Name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-
-            <div className='relative w-full min-w-[200px]'>
-              <Input
-                label='Email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div className='relative w-full min-w-[200px]'>
-              <Input
-                label='Subject'
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-              />
-            </div>
-
-            <div className='relative w-full min-w-[200px]'>
-              <Textarea
-                label='Message'
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </div>
-            <div className='relative w-full min-w-[200px] items-center'>
-              <Checkbox label='I agree the Terms and Conditions' />
-            </div>
-            <div className='relative w-full min-w-[200px]'>
-              <button
-                onClick={formSubmitHandler}
-                className='block w-full select-none rounded-lg bg-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none'
-                type='button'
-              >
-                Get a free solar estimate
-              </button>
-            </div>
-          </form> */}
-          {/* <iframe
-            src='https://docs.google.com/forms/d/e/1FAIpQLSedHuPW1240_1w7ABRmoBlvoPfl_4Ys0xWgBCGNci10yzMnBA/viewform?embedded=true'
-            height='350'
-            frameborder='0'
-            marginheight='0'
-            marginwidth='0'
-            className='w-full'
-          >
-            Loading…
-          </iframe> */}
           <div className='flex flex-col gap-2 justify-center w-full'>
             <Typography
               as='a'
-              href='https://docs.google.com/forms/d/e/1FAIpQLSedHuPW1240_1w7ABRmoBlvoPfl_4Ys0xWgBCGNci10yzMnBA/viewform?embedded=true'
+              href='https://docs.google.com/forms/d/e/1FAIpQLSdOm5zke-gtnYMq9vhuHKT36jAUODur3RlST7au3nOYWsNzPQ/viewform?usp=sf_link'
               className='relative inline-block px-4 py-2 font-medium group mb-6 animate-bounce text-center'
               target='_blank'
             >
@@ -135,21 +52,23 @@ const Contact = () => {
             </Typography>
             <Typography variant='paragraph' className='font-rubik'>
               Email:{' '}
-              <span className='underline cursor-pointer'>
+              <span className='underline underline-offset-4 cursor-pointer font-bold'>
                 info@maitrasolarsolutions.in
               </span>
             </Typography>
             <Typography variant='paragraph' className='font-rubik'>
               To join our team, contact us at{' '}
-              <span className='underline cursor-pointer'>
+              <span className='underline underline-offset-4 cursor-pointer font-bold'>
                 hr@maitrasolarsolutions.in
               </span>
             </Typography>
 
             <Typography variant='paragraph' className='font-rubik'>
-              Text "HELP" for help or contact us at{' '}
-              <br className='block md:hidden' />
-              <span className='underline cursor-pointer'>+91-8446853660</span>
+              Text <span className='font-bold'>"HELP"</span> for help or contact
+              us at <br className='block md:hidden' />
+              <span className='underline underline-offset-4 cursor-pointer font-bold'>
+                +91-8446853660
+              </span>
             </Typography>
           </div>
         </div>

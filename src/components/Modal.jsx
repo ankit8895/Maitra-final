@@ -8,34 +8,39 @@ import {
   Typography,
 } from '@material-tailwind/react';
 
-const Modal = ({ children, Modalfor }) => {
-  const [open, setOpen] = React.useState(false);
+const Modal = ({ children, Modalfor, Modalsize }) => {
+  const [size, setSize] = React.useState(null);
 
-  const handleOpen = () => setOpen(!open);
+  const handleOpen = (value) => setSize(value);
   return (
     <>
       <Button
         className='bg-transparent border-0 shadow-none hover:shadow-none p-0'
-        onClick={handleOpen}
+        onClick={() => handleOpen(Modalsize)}
       >
         {children}
       </Button>
       <Dialog
-        open={open}
+        open={size === 'md' || size === 'xxl'}
+        size={size || 'md'}
         handler={handleOpen}
         animate={{
           mount: { scale: 1, y: 0 },
           unmount: { scale: 0.9, y: -100 },
         }}
       >
-        <DialogHeader>
+        <DialogHeader className='z-10'>
           {Modalfor === 'whatsapp'
             ? 'Scan the OR Code'
             : Modalfor === 'email'
             ? 'Send Email'
-            : 'Click to Connect'}
+            : Modalfor === 'Linkedin'
+            ? 'Click to connect'
+            : 'Privacy Policy'}
         </DialogHeader>
-        <DialogBody className='flex justify-center items-center'>
+        <DialogBody
+          className={`flex justify-center items-center z-10 overflow-scroll`}
+        >
           {Modalfor === 'whatsapp' ? (
             <img src='./QRCode.jpg' alt='whatsapp-QR' className='w-1/2 h-1/2' />
           ) : Modalfor === 'email' ? (
@@ -45,7 +50,7 @@ const Modal = ({ children, Modalfor }) => {
             >
               Email: info@maitrasolarsolutions.in
             </Typography>
-          ) : (
+          ) : Modalfor === 'Linkedin' ? (
             <a
               href='https://in.linkedin.com/in/maitra-solar-solutions'
               target='_blank'
@@ -53,6 +58,8 @@ const Modal = ({ children, Modalfor }) => {
             >
               https://in.linkedin.com/in/maitra-solar-solutions
             </a>
+          ) : (
+            <></>
           )}
         </DialogBody>
         <DialogFooter>

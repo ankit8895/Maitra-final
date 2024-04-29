@@ -19,6 +19,7 @@ import PlantThermography from './pages/PlantThermography';
 import ChemicalCleaning from './pages/ChemicalCleaning';
 import Revamping from './pages/Revamping';
 import StreetLights from './pages/StreetLights';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -52,6 +53,7 @@ const App = () => {
         <Route path='/chemical-cleaning' element={<ChemicalCleaning />} />
         <Route path='/revamping' element={<Revamping />} />
         <Route path='/street-lights' element={<StreetLights />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
 
       <Footer />
@@ -62,7 +64,11 @@ const App = () => {
         color='blue-gray'
         className='text-right font-normal h-min w-full px-4 font-rubik border-t-2'
       >
-        This website is designed by Wellnexus India
+        This website is designed by{' '}
+        <span className='text-[#D4AF37] font-bold underline decoration-2'>
+          Wellnexus
+        </span>{' '}
+        India
       </Typography>
     </Router>
   );

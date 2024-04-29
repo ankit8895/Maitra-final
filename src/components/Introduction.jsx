@@ -16,7 +16,7 @@ const Introduction = () => {
           <img
             src='./profile.jpeg'
             alt='profile-photo'
-            className='bg-center object-cover w-full md:h-full shadow-xl rounded-lg'
+            className='bg-center object-cover lg:object-contain lg:bg-[#080607] w-full md:h-full shadow-xl rounded-lg'
           />
         </div>
         <div className='flex flex-col justify-between items-start md:w-1/2 lg:w-2/5 md:h-[30rem]'>
