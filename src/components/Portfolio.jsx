@@ -37,7 +37,7 @@ const Portfolio = () => {
               fill='white'
             />
           </svg>
-          <div className='relative pt-10 px-10 flex items-center justify-center'>
+          <div className='relative pt-10 px-10 flex items-center justify-center md:mt-12'>
             <div
               className='block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3'
               style={{
@@ -47,15 +47,15 @@ const Portfolio = () => {
               }}
             ></div>
             <img
-              className='relative w-40 scale-150'
-              src='./Safety_first.png'
-              alt='Safety First'
+              className='relative w-52 md:w-40 scale-150'
+              src='./Customer_Satisfaction.png'
+              alt='Customer Satisfaction'
             />
           </div>
-          <div className='relative text-white px-6 pb-6 mt-6'>
+          <div className='relative text-white px-6 pb-6 md:mt-28 lg:mt-[5.5rem]'>
             <div className='flex justify-center items-center'>
-              <span className='block bg-white rounded-full text-[#0063A4] text-xl font-bold px-3 py-2 leading-none items-center'>
-                Safety First
+              <span className='block bg-white rounded-full text-[#0063A4] text-lg font-bold px-3 py-2 leading-none items-center'>
+                Customer Satisfaction
               </span>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Portfolio = () => {
               fill='white'
             />
           </svg>
-          <div className='relative pt-10 px-10 flex items-center justify-center md:mt-12'>
+          <div className='relative pt-10 px-10 flex items-center justify-center'>
             <div
               className='block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3'
               style={{
@@ -96,15 +96,15 @@ const Portfolio = () => {
               }}
             ></div>
             <img
-              className='relative w-40 scale-150'
-              src='./Customer_Satisfaction.png'
-              alt='Customer Satisfaction'
+              className='relative w-52 md:w-40 h-40 md:h-full scale-150'
+              src='./Safety_first.png'
+              alt='Safety First'
             />
           </div>
-          <div className='relative text-white px-6 pb-6 md:mt-28'>
+          <div className='relative text-white px-6 pb-6 md:mt-10 lg:mt-5'>
             <div className='flex justify-center items-center'>
-              <span className='block bg-white rounded-full text-[#FFCB05] text-lg font-bold px-3 py-2 leading-none items-center'>
-                Customer Satisfaction
+              <span className='block bg-white rounded-full text-[#FFCB05] text-xl font-bold px-3 py-2 leading-none items-center'>
+                Safety First
               </span>
             </div>
           </div>
@@ -145,12 +145,12 @@ const Portfolio = () => {
               }}
             ></div>
             <img
-              className='relative w-40 scale-150'
+              className='relative w-52 md:w-40 scale-150'
               src='./Excellence.png'
               alt='Excellence'
             />
           </div>
-          <div className='relative text-white px-6 pb-6 md:mt-24'>
+          <div className='relative text-white px-6 pb-6 md:mt-24 lg:mt-[5.5rem]'>
             <div className='flex justify-center items-center'>
               <span className='block bg-white rounded-full text-[#0063A4] text-xl font-bold px-3 py-2 leading-none items-center'>
                 Excellence
@@ -194,7 +194,7 @@ const Portfolio = () => {
               }}
             ></div>
             <img
-              className='relative w-40 scale-150'
+              className='relative w-52 md:w-40 scale-150'
               src='./Respect.png'
               alt='Respect'
             />
@@ -243,7 +243,7 @@ const Portfolio = () => {
               }}
             ></div>
             <img
-              className='relative w-40 scale-150'
+              className='relative w-52 md:w-40 scale-150'
               src='./Teamwork.png'
               alt='Respect'
             />

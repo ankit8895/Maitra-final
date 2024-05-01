@@ -4,11 +4,11 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <Section id='hero' className='h-[31rem]'>
+    <Section id='hero' className='h-64 md:h-[31rem]'>
       <Carousel
         className='h-full'
-        loop={true}
-        autoplay={true}
+        // loop={true}
+        // autoplay={true}
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className='absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
             {new Array(length).fill('').map((_, i) => (
@@ -26,22 +26,22 @@ const Hero = () => {
         <img
           src='./carousel1.png'
           alt='image 1'
-          className='h-full w-full md:object-cover lg:object-fill'
+          className='h-full w-full lg:object-fill'
         />
         <img
           src='./carousel2.png'
           alt='image 2'
-          className='h-full w-full md:object-cover lg:object-fill'
+          className='h-full w-full lg:object-fill'
         />
         <img
           src='./carousel3.png'
           alt='image 2'
-          className='h-full w-full md:object-cover lg:object-fill'
+          className='h-full w-full lg:object-fill'
         />
         <img
           src='./carousel4.png'
           alt='image 2'
-          className='h-full w-full md:object-cover lg:object-fill'
+          className='h-full w-full lg:object-fill'
         />
       </Carousel>
     </Section>
