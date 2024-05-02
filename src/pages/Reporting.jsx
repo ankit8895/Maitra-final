@@ -25,7 +25,7 @@ const Reporting = () => {
         <span className='absolute inset-0 border-2 border-black rounded-lg'></span>
       </Link>
 
-      <Heading text='Module Cleaning' />
+      <Heading text='Reporting' />
       <div className='hidden md:grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-2 md:mb-4 lg:mb-8'>
         <img
           className='h-full w-full max-w-full rounded-lg object-contain object-center'

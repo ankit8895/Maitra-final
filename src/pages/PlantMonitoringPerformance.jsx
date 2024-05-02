@@ -32,21 +32,6 @@ const PlantMonitoringPerformance = () => {
           src='./pmp1.jpg'
           alt='pmp1'
         />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./pmp2.jpeg'
-          alt='pmp2'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./pmp3.jpeg'
-          alt='pmp3'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./pmp4.jpeg'
-          alt='pmp4'
-        />
       </div>
 
       <Carousel className='md:hidden mb-2 md:mb-4 lg:mb-8'>
@@ -54,21 +39,6 @@ const PlantMonitoringPerformance = () => {
           className='h-96 w-full max-w-full object-fill rounded-lg object-center'
           src='./pmp1.jpg'
           alt='pmp1'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./pmp2.jpeg'
-          alt='pmp2'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./pmp3.jpeg'
-          alt='pmp3'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./pmp4.jpeg'
-          alt='pmp4'
         />
       </Carousel>
 

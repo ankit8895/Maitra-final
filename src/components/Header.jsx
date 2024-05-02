@@ -71,7 +71,7 @@ const Header = () => {
           className='mr-4 cursor-pointer py-1.5 flex flex-row items-center gap-2'
         >
           <img src='./logo.png' alt='logo' className='w-20 h-20' />
-          <Typography as='h2' className='font-rubik font-medium lg:text-2xl'>
+          <Typography as='h2' className='font-rubik font-extrabold lg:text-2xl'>
             Maitra Solar Solutions
           </Typography>
         </Typography>

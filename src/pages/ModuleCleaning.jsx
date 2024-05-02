@@ -48,19 +48,14 @@ const ModuleCleaning = () => {
           alt='mc4'
         />
         <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
+          className='h-full w-full max-w-fill rounded-lg object-fill object-center'
           src='./mc5.jpeg'
           alt='mc5'
         />
         <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
+          className='h-full w-full max-w-full rounded-lg object-fill object-center'
           src='./mc6.jpeg'
           alt='mc6'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./mc7.jpeg'
-          alt='mc7'
         />
       </div>
 

@@ -48,11 +48,6 @@ const InverterMaintenance = () => {
         />
         <img
           className='h-full w-full max-w-full rounded-lg object-fill object-center'
-          src='./im5.jpeg'
-          alt='im5'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-fill object-center'
           src='./im6.jpeg'
           alt='im6'
         />
@@ -60,21 +55,6 @@ const InverterMaintenance = () => {
           className='h-full w-full max-w-full rounded-lg object-contain object-center'
           src='./im7.jpeg'
           alt='im7'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./im8.jpeg'
-          alt='im8'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./im9.jpeg'
-          alt='im9'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./im10.jpeg'
-          alt='im10'
         />
       </div>
 
@@ -101,11 +81,6 @@ const InverterMaintenance = () => {
         />
         <img
           className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./im5.jpeg'
-          alt='im5'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
           src='./im6.jpeg'
           alt='im6'
         />
@@ -113,21 +88,6 @@ const InverterMaintenance = () => {
           className='h-96 w-full max-w-full object-fill rounded-lg object-center'
           src='./im7.jpeg'
           alt='im7'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./im8.jpeg'
-          alt='im8'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./im9.jpeg'
-          alt='im9'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./im10.jpeg'
-          alt='im10'
         />
       </Carousel>
 

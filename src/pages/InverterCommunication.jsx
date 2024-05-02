@@ -37,16 +37,6 @@ const InverterCommunication = () => {
           src='./ic2.jpeg'
           alt='ic2'
         />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-fill object-center'
-          src='./ic4.jpeg'
-          alt='ic4'
-        />
-        <img
-          className='h-full w-full max-w-full rounded-lg object-contain object-center'
-          src='./ic5.jpeg'
-          alt='ic5'
-        />
       </div>
 
       <Carousel className='md:hidden mb-2 md:mb-4 lg:mb-8'>
@@ -59,16 +49,6 @@ const InverterCommunication = () => {
           className='h-96 w-full max-w-full object-fill rounded-lg object-center'
           src='./ic2.jpeg'
           alt='ic2'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./ic4.jpeg'
-          alt='ic4'
-        />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./ic5.jpeg'
-          alt='ic5'
         />
       </Carousel>
 
