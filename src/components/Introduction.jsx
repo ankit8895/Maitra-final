@@ -63,7 +63,7 @@ const Introduction = () => {
               variant='lead'
               className='font-rubik md:mb-1 lg:mb-1 font-medium'
             >
-              "अशक्यं प्रकृतः ऋते जीवनम"
+              "अशक्यं प्रकृतेः ऋते जीवनम्"
             </Typography>
             <Typography
               as='p'

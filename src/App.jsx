@@ -60,7 +60,7 @@ const App = () => {
       <SpeedDialComponent />
       <Typography
         as='a'
-        href='#'
+        href='https://www.instagram.com/wellnexusindia/'
         color='blue-gray'
         className='text-right font-normal h-min w-full px-4 font-rubik border-t-2'
       >
