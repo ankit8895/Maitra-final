@@ -8,7 +8,7 @@ const Introduction = () => {
     <Section
       id='introduction'
       customPadding=' my-5 mx-3 md:my-10 md:mx-5 lg:my-20 lg:mx-10'
-      className="lg:max-h-fit bg-[url('./background.png')] bg-cover"
+      className='lg:max-h-fit'
     >
       <Heading text='Introduction' />
       <div className='flex flex-col gap-4 md:gap-2 lg:gap-0 md:flex-row justify-center md:justify-evenly lg:justify-around items-center lg:px-10'>

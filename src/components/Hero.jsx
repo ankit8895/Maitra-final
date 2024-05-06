@@ -7,8 +7,8 @@ const Hero = () => {
     <Section id='hero' className='h-64 md:h-[31rem]'>
       <Carousel
         className='h-full'
-        // loop={true}
-        // autoplay={true}
+        loop={true}
+        autoplay={true}
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className='absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
             {new Array(length).fill('').map((_, i) => (

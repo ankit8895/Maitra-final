@@ -9,7 +9,6 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Button,
 } from '@material-tailwind/react';
 
 const Services = () => {
@@ -73,7 +72,7 @@ const Services = () => {
     <Section
       id='offer'
       customPadding='my-5 mx-3 md:my-10 md:mx-5 lg:my-20 lg:mx-10'
-      className="lg:max-h-fit bg-[url('./background.png')] bg-cover"
+      className='lg:max-h-fit'
     >
       <Heading text='Services' />
       <div className='hidden lg:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-12 lg:px-10'>
@@ -150,6 +149,16 @@ const Services = () => {
                   className='font-rubik text-justify'
                 >
                   {item.description}
+                  <br />
+                  <br />
+                  <button className='relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-lg group text-sm'>
+                    <span className='w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-black opacity-[3%]'></span>
+                    <span className='absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-black opacity-100 group-hover:-translate-x-8'></span>
+                    <span className='relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-white'>
+                      Read More
+                    </span>
+                    <span className='absolute inset-0 border-2 border-black rounded-lg'></span>
+                  </button>
                 </Typography>
               </div>
             </div>

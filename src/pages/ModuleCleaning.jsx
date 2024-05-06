@@ -90,11 +90,6 @@ const ModuleCleaning = () => {
           src='./mc6.jpeg'
           alt='mc6'
         />
-        <img
-          className='h-96 w-full max-w-full object-fill rounded-lg object-center'
-          src='./mc7.jpeg'
-          alt='mc7'
-        />
       </Carousel>
 
       <div className='text-justify'>
