@@ -416,7 +416,13 @@ const Header = () => {
           </div>
         )}
       </div>
-      <Collapse open={openNav}>{navList}</Collapse>
+      {pathname === "/" ? (
+        <Collapse open={openNav}>{navList}</Collapse>
+      ) : (
+        <Collapse open={openNav}>
+          <NavListMenu />
+        </Collapse>
+      )}
     </Navbar>
   );
 };
